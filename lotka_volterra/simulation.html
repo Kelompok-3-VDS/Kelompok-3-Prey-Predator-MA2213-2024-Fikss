@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>Lotka Volterra Model | Visualisasi Dalam Sains</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keyword" content="lotka, volterra, lotka volterra, interactive, predator, prey, population, simulation">
+  <meta name="og:image" content="https://github.com/visualize-it/visualize-it.github.io/raw/main/images_webp/lotka_volterra.webp">
+
+  <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script src="../helper.js" defer></script>
+  <script src="basic.js" defer></script>
+  <script src="user_input.js" defer></script>
+  <script src="simulation.js" defer></script>
+
+  <script type="text/javascript" async
+    src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../style.css" />
+</head>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M95CKRP8HB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { window.dataLayer.push(arguments); }
+  gtag('js', new Date());
+
+  gtag('config', 'G-M95CKRP8HB');
+</script>
+
+<body>
+  <nav class="nav-extended" style="background: black; margin-top: 0mm">
+      <div class="nav-wrapper">
+          <h1 id="main-heading">
+              <a href="index.html">
+                  <img src="logo_itera_bulet_head.png" alt="logo" width="60" height="60"/>
+              </a>
+              Visualisasi Dalam Sains
+              <a href="index.html">
+                  <img src="Logo-Matematika-fix (1).png" alt="logo" width="65" height="65"/>
+              </a>
+          </h1>
+      </div>
+      <div class="nav-content">
+          <ul class="tabs tabs-transparent tabs-fixed-width">
+            <li class="tab"><a href="../index.html" style="font-size: larger;">Home</a></li>
+          </ul>
+      </div>
+  </nav>
+
+  <div class="text">
+    <h2>Lotka Volterra Model</h2>
+    <center>
+      <p>
+        Model Lotka-Volterra adalah satu set dua persamaan diferensial non-linear yang menggambarkan dinamika populasi pemangsa dan mangsa. Model ini dapat diperluas untuk memasukkan lebih banyak spesies yang berinteraksi. Simulasi ini mereplikasi Model Lotka-Volterra dengan Kotak biru mewakili mangsa, sedangkan kotak merah mewakili pemangsa.
+      </p>
+      <br>
+
+          <hr>
+          <br>
+
+          <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predator-Prey Simulation</title>
+</head>
+<body>
+    <div>
+        <label for="preyCount">Tingkat Prey (Padi):</label>
+        <input type="number" id="preyCount" value="10">
+    </div>
+    <div>
+        <label for="predatorCount">Tingkat Predator (Tikus Sawah):</label>
+        <input type="number" id="predatorCount" value="10">
+    </div>
+    <div>
+        <label for="predatorDeathRate">Tingkat Kematian Predator (Tikus Sawah):</label>
+        <input type="number" step="0.001" id="predatorDeathRate" value="0.005">
+    </div>
+    <div>
+        <label for="preyLifeRate">Tingkat Kehidupan Prey (Padi):</label>
+        <input type="number" step="0.001" id="preyLifeRate" value="0.02">
+    </div>
+    <button id="startButton">Mulai Simulasi</button>
+    <div id="sketch-holder"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+  </head>
+  <body>
+    <main>
+    </main>
+    <script src="simulation.js"></script>
+  </body>
+</html>
+
+    <br>
+
+    <h3>Persamaan Lotka Volterra</h3>
+
+    <p>
+      Dimana \(x\) menunjukkan populasi mangsa dan \(y\) menyatakan populasi pemangsa. Sehingga, Persamaan di tunjukkan oleh Lotka
+      Volterra Model:
+    </p>
+    \[ \frac{dx}{dt} = \alpha x - \beta x y \]
+    \[ \frac{dy}{dt} = \delta x y - \gamma y \]
+    <p>
+      \(\alpha, \beta, \gamma, \delta\) adalah bilangan rill dan positif yang menggambarkan pertumbuhan, 
+      kematian dan interaksi antara dua spesies. Simulasi numerik dari model ini (dengan nilai parameter model tertentu) menunjukkan perilaku perubahan pada populasi mangsa dan pemangsa. 
+      Perilaku semacam ini sebenarnya diamati pada populasi di dunia nyata, dan kelompok kami mengangkat masalah terkait  Oriza sativa (Prey) dan Rattus argentiventer (predator).
+    </p>
+    <br>
+    <hr>
+
+    <h3>Kesimpulan</h3>
+    <p>
+      Penelitian ini berhasil mengaplikasikan model matematika Lotka-Volterra untuk menganalisis interaksi predator-prey antara tanaman padi dan tikus sawah di Karawang. 
+      Hasil analisis menunjukkan bahwa populasi tikus sawah memiliki dampak signifikan terhadap penurunan populasi padi.
+      Pengendalian tikus sawah yang efektif terbukti penting dalam meningkatkan stabilitas ekosistem pertanian dan produktivitas padi. Simulasi model menunjukkan fluktuasi populasi yang dapat diprediksi 
+      berdasarkan parameter tingkat kelahiran dan kematian padi serta tikus sawah. 
+      Visualisasi hasil dalam bentuk dashboard interaktif memberikan alat yang berguna bagi petani dan pengambil kebijakan untuk memonitor dan mengelola populasi hama secara real-time. 
+      Dashboard ini memungkinkan pemahaman yang lebih baik tentang dinamika ekosistem dan mendukung pengambilan keputusan yang lebih informasi. 
+      Dengan demikian, penelitian ini berkontribusi pada pengembangan strategi pengendalian hama yang lebih efektif dan berkelanjutan, serta memberikan dasar ilmiah untuk pengelolaan ekosistem pertanian yang lebih baik di Karawang. 
+      <br>
+      Aplikasi model Lotka-Volterra dalam konteks ini menunjukkan potensi besar dalam mendukung manajemen pertanian yang 
+      berkelanjutan dan adaptif terhadap perubahan dinamika populasi hama.
+    </p>
+    <br>
+    <hr>
+    <p class="center-align">Dibuat Oleh Kelompok 3 Visualisasi Dalam Sains | Kunjungi Saya Di <a href="https://www.github.com/Ditra12">GitHub</a></p>
+  </div>
+</body>
+
+</html>
